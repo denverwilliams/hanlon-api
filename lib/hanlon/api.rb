@@ -13,6 +13,7 @@ module Hanlon
     autoload :Node,              'hanlon/api/node'
     autoload :ActiveModel,       'hanlon/api/active_model'
     autoload :Policy,            'hanlon/api/policy'
+    autoload :Tag,               'hanlon/api/tag'
     require 'hanlon/api/broker/chef_metal'
 
     class << self
