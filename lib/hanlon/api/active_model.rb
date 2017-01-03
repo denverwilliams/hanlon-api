@@ -32,6 +32,11 @@ module Api
       @model.select {|key,_| key != '@node'}
     end
 
+    def logs
+      # remove '@node'...again not sure why it's duplicated here
+      @model['@log']
+    end
+
     def policy
       # make this easier to get at
       @policy ||= Hanlon::Api::Policy.find(root_policy)
